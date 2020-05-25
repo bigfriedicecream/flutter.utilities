@@ -7,4 +7,11 @@ extension ListExtensions on List {
       return p;
     });
   }
+
+  List<T> mapIndexed<T>(fn(int index, element)) {
+    final List<T> list = [];
+    for (var i = 0; i < this.length; i++)
+      list.add(fn(i, this[i]));
+    return list;
+  }
 }
