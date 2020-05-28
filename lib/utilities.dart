@@ -1,3 +1,5 @@
+library utilities;
+
 /// List extensions
 extension ListExtensions on List {
   List<T> mapNotNull<T>(fn(element)) {
